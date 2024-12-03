@@ -1,4 +1,4 @@
-import { Header } from '@/app/components/Header/Header';
+import { Header } from '@/app/components/Header/Header.jsx';
 import styles from './edit.module.css';
 import EditComponent from '@/app/components/Edit/Edit';
 
