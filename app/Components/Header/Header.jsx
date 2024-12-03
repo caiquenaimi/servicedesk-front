@@ -23,7 +23,7 @@ import styles from "./header.module.css";
 
 const SidebarItem = ({ Icon, Text, href }) => {
   return (
-    <Link className={styles.container} href={href}>
+    <Link className={styles.containerSidebarItem} href={href}>
       <Icon />
       <span style={{ marginLeft: 15 }}>{Text}</span>
     </Link>

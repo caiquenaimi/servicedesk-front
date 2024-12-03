@@ -62,7 +62,7 @@
   padding: 0 0.2em;
   font-size: 1.4rem;
 }
-.container {
+.containerSidebarItem {
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -76,21 +76,21 @@
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.container svg {
+.containerSidebarItem svg {
   font-size: 20px;
   transition: color 0.3s ease-in-out;
 }
 
-.container:hover {
+.containerSidebarItem:hover {
   width: 85%;
   transform: translateX(10px);
 }
 
-.container span {
+.containerSidebarItem span {
   font-size: 16px;
 }
 
-.container:hover svg {
+.containerSidebarItem:hover svg {
   color: #d6d6d6;
 }
 .sidebar {
@@ -201,9 +201,6 @@
     padding: 0.5rem;
   }
 
-  .container span {
-    display: none;
-  }
 
   .container svg {
     font-size: 24px;
