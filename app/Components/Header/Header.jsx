@@ -76,7 +76,9 @@ const Sidebar = ({ isActive, onClose }) => {
         ) : (
           <>
             <SidebarItem Icon={FaUserPlus} Text="Registrar" href="/Register" />
-            <SidebarItem Icon={FaUser} Text="Login" href="/Login" />
+            <div id={styles.loginIcon}>
+              <SidebarItem Icon={FaUser} Text="Login" href="/Login" />
+            </div>
           </>
         )}
       </div>

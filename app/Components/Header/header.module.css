@@ -81,6 +81,14 @@
   transition: color 0.3s ease-in-out;
 }
 
+#loginIcon {
+  margin-left: -0.5px;
+}
+
+#loginIcon svg {
+  font-size: 20px;
+}
+
 .containerSidebarItem:hover {
   width: 85%;
   transform: translateX(10px);
@@ -191,7 +199,6 @@
   } */
 }
 
-
 @media screen and (max-width: 768px) {
   .container {
     display: flex;
@@ -200,7 +207,6 @@
     margin-left: 0;
     padding: 0.5rem;
   }
-
 
   .container svg {
     font-size: 24px;
@@ -213,7 +219,6 @@
     border-radius: 15px;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .links {
