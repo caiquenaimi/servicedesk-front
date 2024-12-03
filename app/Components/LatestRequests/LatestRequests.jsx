@@ -81,7 +81,7 @@ export default function LatestRequests() {
                 <p className={styles.cardDate}>
                   <strong>Data:</strong> {format(request.date_request)}
                 </p>
-                <p className={styles.cardStatus}>
+                <div className={styles.cardStatus}>
                   <div className={styles.status}>
                     {request.status_request === "aguardando" && (
                       <p className={styles.awaiting}>Aguardando</p>
@@ -93,7 +93,7 @@ export default function LatestRequests() {
                       <p className={styles.concluded}>Concluída</p>
                     )}
                   </div>
-                </p>
+                </div>
               </div>
             </motion.div>
           ))}
