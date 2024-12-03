@@ -13,7 +13,7 @@ import {
   getRequestByFinishDate,
   getRequestByUser,
   getRequestByLocal,
-  getRequestsByPriority
+  getRequestsByPriority,
 } from "@/app/actions/request";
 import format from "@/app/utilities/formattedDate";
 import Modal from "../Modal/Modal";
@@ -51,17 +51,21 @@ const AdminPage = () => {
       } catch (e) {
         toast.error(e, { duration: 2000 });
       }
-    }
+    };
     fetchData();
   }, []);
 
   useEffect(() => {
     const fetchUsers = async () => {
       let result;
-      if (optionSearch == 'name') {
-        name.trim() ? result = await getUserByName(name) : result = await getAllUsers();
-      } else if (optionSearch == 'role') {
-        option.trim() ? result = await getUserByRole(option) : result = await getAllUsers();
+      if (optionSearch == "name") {
+        name.trim()
+          ? (result = await getUserByName(name))
+          : (result = await getAllUsers());
+      } else if (optionSearch == "role") {
+        option.trim()
+          ? (result = await getUserByRole(option))
+          : (result = await getAllUsers());
       } else {
         result = await getAllUsers();
       }
@@ -101,25 +105,39 @@ const AdminPage = () => {
       if (localsBack.locais) setLocals(localsBack.locais);
 
       let result;
-      if (optionSearch == 'name') name.trim() ? result = await getRequestsByName(name) : result = await getAllRequests();
+      if (optionSearch == "name")
+        name.trim()
+          ? (result = await getRequestsByName(name))
+          : (result = await getAllRequests());
       else if (optionSearch == "local")
-        option.trim() ? result = await getRequestByLocal(option) : result = await getAllRequests();
+        option.trim()
+          ? (result = await getRequestByLocal(option))
+          : (result = await getAllRequests());
       else if (optionSearch == "status")
-        option.trim() ? result = await getRequestByStatus(option) : result = await getAllRequests();
+        option.trim()
+          ? (result = await getRequestByStatus(option))
+          : (result = await getAllRequests());
       else if (optionSearch == "create")
-        creation.trim() ? result = await getRequestByCreationDate(creation) : result = await getAllRequests();
+        creation.trim()
+          ? (result = await getRequestByCreationDate(creation))
+          : (result = await getAllRequests());
       else if (optionSearch == "finish")
-        finish.trim() ? result = await getRequestByFinishDate(finish) : result = await getAllRequests();
-      else if (optionSearch == 'user')
-        byUser.trim() ? result = await getRequestByUser(byUser) : result = await getAllRequests();
-      else if (optionSearch == 'priority')
-        option.trim() ? result = await getRequestsByPriority(option) : result = await getAllRequests();
+        finish.trim()
+          ? (result = await getRequestByFinishDate(finish))
+          : (result = await getAllRequests());
+      else if (optionSearch == "user")
+        byUser.trim()
+          ? (result = await getRequestByUser(byUser))
+          : (result = await getAllRequests());
+      else if (optionSearch == "priority")
+        option.trim()
+          ? (result = await getRequestsByPriority(option))
+          : (result = await getAllRequests());
       else result = await getAllRequests();
 
       console.log(optionSearch);
       console.log(option);
       console.log(result);
-      
 
       if (!result.requests) {
         setResponse([]);
@@ -152,7 +170,7 @@ const AdminPage = () => {
           "dia criado": format(request.date_request),
           "dia finalizado": format(request.date_conclusion),
           usuário: request.email,
-          prioridade: request.priority
+          prioridade: request.priority,
         }))
       );
     };
@@ -161,18 +179,18 @@ const AdminPage = () => {
   }, [name, option, optionSearch, creation, finish, typeSearch, byUser]);
 
   const months = {
-    1: 'Janeiro',
-    2: 'Fevereiro',
-    3: 'Março',
-    4: 'Abril',
-    5: 'Maio',
-    6: 'Junho',
-    7: 'Julho',
-    8: 'Agosto',
-    9: 'Setembro',
-    10: 'Outubro',
-    11: 'Novembro',
-    12: 'Dezembro',
+    1: "Janeiro",
+    2: "Fevereiro",
+    3: "Março",
+    4: "Abril",
+    5: "Maio",
+    6: "Junho",
+    7: "Julho",
+    8: "Agosto",
+    9: "Setembro",
+    10: "Outubro",
+    11: "Novembro",
+    12: "Dezembro",
   };
 
   return (
@@ -181,14 +199,27 @@ const AdminPage = () => {
         className={styles.data}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.2 }}>
-        {
-          data &&
-          <div className={styles.content}>
-            <DataRequest month={months[data.last_month.split('-')[1]]} requests={data.reqs_last_month} attented={data.attended_reqs_last_month} />
-            <DataRequest month={months[data.this_month.split('-')[1]]} requests={data.reqs_this_month} attented={data.attended_reqs_this_month} />
-          </div>
-        }
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        {data && (
+          <motion.div
+            className={styles.content}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <DataRequest
+              month={months[data.last_month.split("-")[1]]}
+              requests={data.reqs_last_month}
+              attented={data.attended_reqs_last_month}
+            />
+            <DataRequest
+              month={months[data.this_month.split("-")[1]]}
+              requests={data.reqs_this_month}
+              attented={data.attended_reqs_this_month}
+            />
+          </motion.div>
+        )}
       </motion.section>
       <motion.section
         className={styles.filters}
@@ -323,7 +354,7 @@ const AdminPage = () => {
                     />
                   </>
                 )}
-                {optionSearch == 'priority' && (
+                {optionSearch == "priority" && (
                   <>
                     <label htmlFor="choice">Qual a prioridade:</label>
                     <select
@@ -338,8 +369,7 @@ const AdminPage = () => {
                       <option value="low">Baixa</option>
                     </select>
                   </>
-                )
-                }
+                )}
               </>
             )}
           </motion.div>
@@ -455,7 +485,7 @@ const AdminPage = () => {
               "dia criado",
               "dia finalizado",
               "usuário",
-              "prioridade"
+              "prioridade",
             ]}
             content={response}
           />
