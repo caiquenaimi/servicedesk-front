@@ -183,12 +183,12 @@
     font-size: 14px;
   }
 
-  .container {
+  .Sidecontainer {
     width: 100%;
     padding: 0.5rem;
   }
 
-  .container svg {
+  .Sidecontainer svg {
     font-size: 24px;
   }
 
@@ -197,6 +197,7 @@
     margin-left: 0;
     margin-right: 0.5rem;
   } */
+  /* caurin estupido de burro idiota */
 }
 
 @media screen and (max-width: 768px) {
@@ -218,6 +219,7 @@
     margin-right: 0.5rem;
     border-radius: 15px;
   }
+
 }
 
 @media screen and (max-width: 768px) {

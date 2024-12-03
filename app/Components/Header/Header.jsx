@@ -52,7 +52,7 @@ const Sidebar = ({ isActive, onClose }) => {
         width: "12rem",
       }}
     >
-      <div className={styles.container}>
+      <div className={styles.Sidecontainer}>
         <SidebarItem Icon={FaHome} Text="Início" href="/" />
         <SidebarItem Icon={FaTools} Text="Solicitações" href="/Request" />
         {user ? (
