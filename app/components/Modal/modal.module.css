@@ -62,7 +62,7 @@
   
   @media (max-width: 600px) {
     .modal {
-      width: 100%;
+      width: 90%;
       max-width: 40vh;
       border-radius: 12px;
       background-color: white;
