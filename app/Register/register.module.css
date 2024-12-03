@@ -1,0 +1,166 @@
+/* Estilos para o container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100dvh;
+    background-color: #f4f4f4;
+    padding: 2rem;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Caixa de login */
+  .loginBox {
+    background-color: #ffffff;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Título */
+  .loginTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Campos de entrada */
+  .inputField {
+    margin-bottom: 1.5rem;
+  }
+  
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .showPasswordButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #555;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff; /* Cor branca */
+    transition: border 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #ff0000;
+    outline: none;
+  }
+  
+  /* Botão de login */
+  .btnLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 0.75rem;
+    width: 90%;
+    border-radius: 12px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .btnNoLogin {
+    padding: 0.75rem;
+    width: 90%;
+    border-radius: 12px;
+    border: none;
+    background-color: #000000bb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btnNoLogin:hover {
+    transform: scale(1.05);
+    background-color: #000000;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #cc0000;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .bg {
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .loginBox {
+      padding: 1.5rem;
+    }
+  
+    .loginTitle {
+      font-size: 1.5rem;
+    }
+  
+    .input {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .btnNoLogin {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .bg {
+      margin-top: 4rem;
+    }
+  }

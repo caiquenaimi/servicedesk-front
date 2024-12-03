@@ -1,0 +1,177 @@
+/* Estilos para o container principal */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    min-height: 77dvh;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Caixa de login */
+  .loginBox {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    max-height: 27rem;
+  }
+  
+  /* Título */
+  .loginTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 7dvh;
+  }
+  
+  /* Campos de entrada */
+  .inputField {
+    margin-bottom: 1.5rem;
+  }
+  
+  .label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #555;
+  }
+  
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .showPasswordButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    transition: border 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #ff0000;
+    outline: none;
+    color: #333;
+    background-color: #efefef;
+  }
+  
+  /* Botão de login */
+  .btnLogin {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 0.75rem;
+    width: 90%;
+    border-radius: 12px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #cc0000;
+  }
+  
+  .btnNoAccount {
+    padding: 0.75rem;
+    width: 90%;
+    border-radius: 12px;
+    border: none;
+    background-color: #000000bb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btnNoAccount:hover {
+    transform: scale(1.05);
+    background-color: #000000;
+  }
+  
+  .container {
+    background-color: #f4f4f4;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .bg {
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .loginBox {
+      padding: 1.5rem;
+    }
+  
+    .loginTitle {
+      font-size: 1.5rem;
+    }
+  
+    .input {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .btnNoAccount {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .bg {
+      margin-top: 10rem;
+    }
+  }
