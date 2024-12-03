@@ -1,5 +1,5 @@
 import UserComponent from "../components/UserComponent/UserComponent";
-import Header from '../components/Header/header.jsx';
+import {Header} from '../Components/Header/Header';
 
 export default function Login() {
     return (
