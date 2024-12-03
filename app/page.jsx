@@ -6,7 +6,7 @@ import { IoCamera } from "react-icons/io5";
 import { IoIosPin } from "react-icons/io";
 import { BsPencilSquare } from "react-icons/bs";
 import Link from "next/link";
-import { Header } from "@/app/components/Header/header";
+import { Header } from "@/app/components/Header/Header";
 import { UserContext } from "./contexts/userContext";
 import styles from "./page.module.css";
 import LatestRequests from "@/app/Components/LatestRequests/LatestRequests";

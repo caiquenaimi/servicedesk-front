@@ -1,4 +1,4 @@
-import { Header } from "../components/Header/header";
+import { Header } from "../components/Header/Header";
 import styles from "./request.module.css";
 import RequestComponent from "../components/RequestComponent/RequestComponent";
 
