@@ -159,19 +159,19 @@
   }
 
   .medium {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     width: 1.5rem;
     height: 1.5rem;
   }
 
   .high {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     width: 1.5rem;
     height: 1.5rem;
   }
 
   .low {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -183,19 +183,19 @@
     margin: auto;
   }
   .high {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     width: 1.5rem;
     height: 1.5rem;
   }
 
   .medium {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     width: 1.5rem;
     height: 1.5rem;
   }
 
   .low {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     width: 1.5rem;
     height: 1.5rem;
   }
