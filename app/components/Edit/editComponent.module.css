@@ -1,0 +1,192 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+  
+  .imagePreview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .submitButton {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submitButton:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    display: flex;
+    top: 0;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .problemText {
+    color: red;
+  }
+  
+  .label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    align-self: flex-start;
+  }
+  
+  .titleInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  
+  .descriptionInput {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  
+  .imageUpload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: border 0.3s ease;
+    height: 15vh;
+  }
+  
+  .imageUpload:hover {
+    border: 2px dashed #000;
+  }
+  
+  .removeImageButtonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .removeImageButton {
+    padding: 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .removeImageButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .removeImageButton:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .imageUpload span {
+    color: #000;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .fileName {
+    color: #000;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .loading {
+    height: 100dvh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loadingtxt {
+    color: #000;
+    font-size: medium;
+    padding: 2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main {
+      padding: 20px;
+      width: 80%;
+      align-items: center;
+      display: flex;
+    }
+  
+    .removeImageButtonDiv {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  

@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Header } from "@/app/components/Header/Header";
 import { UserContext } from "./contexts/userContext";
 import styles from "./page.module.css";
-import LatestRequests from "@/app/Components/LatestRequests/LatestRequests";
+import LatestRequests from "@/app/components/LatestRequests/LatestRequests";
 
 export default function Home() {
   const words = [
