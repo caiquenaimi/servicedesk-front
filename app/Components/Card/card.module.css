@@ -1,0 +1,70 @@
+/* Estilo geral do card */
+.card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 12px; /* Borda mais suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra mais suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    overflow: hidden; /* Para não deixar nada sair da borda */
+    max-width: 570px; /* Limita o tamanho do card */
+    background-color: #f9f9f9; /* Fundo claro e neutro */
+    border: 1px solid #e2e2e2; /* Borda suave e discreta */
+    margin-bottom: 1rem; /* Espaço entre os cards */
+  }
+  
+  /* Efeito hover para interação */
+  .card:hover {
+    transform: translateY(-1px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+  }
+  
+  /* Estilos para os itens dentro do card */
+  .cardItem {
+    font-size: 16px; /* Fonte de tamanho médio */
+    color: #333; /* Texto escuro, mas não preto */
+    margin-bottom: 1rem; /* Espaço entre os itens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ease;
+  }
+  
+  /* Alteração de cor dos itens quando hover */
+  .cardItem:hover {
+    color: #4f4f4f; /* Cor de destaque azul */
+  }
+  
+  /* Estilo do título (strong) para os keys */
+  .cardItem strong {
+    color: #666; /* Cor mais suave para os títulos */
+    font-weight: 600; /* Peso leve, mais elegante */
+    text-transform: uppercase; /* Letras maiúsculas */
+    letter-spacing: 1px; /* Um pequeno espaçamento entre as letras */
+    flex-basis: 30%; /* Controla o tamanho da label */
+    font-size: 14px; /* Fonte menor para os títulos */
+  }
+  
+  /* Estilo para os valores dos dados */
+  .cardItem span {
+    color: #444; /* Cor neutra para os valores */
+    font-weight: 400; /* Peso de fonte normal */
+    font-size: 15px; /* Um pouco maior que o título */
+    word-break: break-word; /* Quebra de linha para valores grandes */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .card {
+      padding: 16px 20px; /* Reduz o padding para telas menores */
+      max-width: 100%; /* Faz o card ocupar toda a largura possível */
+    }
+  
+    .cardItem {
+      font-size: 14px; /* Menor fonte em telas pequenas */
+      margin-bottom: 10px; /* Menos espaçamento */
+    }
+  
+    .cardItem strong {
+      font-size: 12px; /* Tamanho menor para os títulos */
+    }
+  }

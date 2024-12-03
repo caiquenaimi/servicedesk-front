@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: 17px;
+    color: white;
+    padding: 0.2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 5%;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  .container svg {
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    width: 85%;
+    transform: translateX(10px);
+  }
+  
+  .container span {
+    font-size: 16px;
+  }
+  
+  .container:hover svg {
+    color: #d6d6d6;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-left: 0;
+      padding: 0.5rem;
+    }
+  
+    .container span {
+      display: none;
+    }
+  
+    .container svg {
+      font-size: 24px;
+    }
+  
+    .container:hover {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0.5rem;
+      border-radius: 15px;
+    }
+  }

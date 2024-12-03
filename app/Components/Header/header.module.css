@@ -1,0 +1,238 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  }
+  
+  .generalDiv {
+    background-color: #ff0000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding-right: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    z-index: 1000;
+  }
+  
+  .titleSenai {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-right: 1em;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 0.5rem;
+  }
+  
+  #senai,
+  .links {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .linksSocial {
+    display: flex;
+    gap: 0.5em;
+  }
+  
+  #senai:hover,
+  .links:hover {
+    border-radius: 8px;
+    background-color: rgb(200, 0, 0);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .barra {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0 0.2em;
+    font-size: 1.4rem;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: 17px;
+    color: white;
+    padding: 0.2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 5%;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  .container svg {
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    width: 85%;
+    transform: translateX(10px);
+  }
+  
+  .container span {
+    font-size: 16px;
+  }
+  
+  .container:hover svg {
+    color: #d6d6d6;
+  }
+  .sidebar {
+    width: 15rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    transition: width 0.3s ease-in-out;
+    background-color: #ff0000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: transparent;
+    margin-top: 1.5rem;
+    width: 11rem;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: showHeader 0.5s forwards;
+  }
+  
+  .logoff {
+    border: none;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 12px;
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+    color: black;
+  }
+  
+  .logoff:hover {
+    background-color: rgb(175, 175, 175);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
+  
+  /* Animações */
+  @keyframes showHeader {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .sidebar svg {
+    position: fixed;
+    color: white;
+    margin: 1rem 0;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  
+  .sidebar span {
+    color: white;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar span {
+      margin-left: 0;
+      font-size: 14px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    .container svg {
+      font-size: 24px;
+    }
+  
+    /* .container:hover {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0.5rem;
+    } */
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-left: 0;
+      padding: 0.5rem;
+    }
+  
+    .container span {
+      display: none;
+    }
+  
+    .container svg {
+      font-size: 24px;
+    }
+  
+    .container:hover {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0.5rem;
+      border-radius: 15px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .links {
+      display: none;
+    }
+  
+    .barra {
+      display: none;
+    }
+  
+    .linksSocial {
+      display: none;
+    }
+  
+    #senai {
+      font-size: 18px;
+    }
+  }
+  
