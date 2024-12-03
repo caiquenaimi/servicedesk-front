@@ -107,9 +107,12 @@ export default function RequestComponent() {
       setTimeout(() => {
         const detailSection = document.querySelector(`.${styles.info}`);
         if (detailSection) {
-          detailSection.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          detailSection.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
         }
-      }, 100); 
+      }, 100);
     } catch (e) {
       toast.error(e.message || e.error);
     }
@@ -360,7 +363,7 @@ export default function RequestComponent() {
                         changeStatus(request.id, "awaiting", request.email)
                       }
                     >
-                      INICIAR SOLICITAÇÃO
+                      <span>INICIAR SOLICITAÇÃO</span>
                     </button>
                   )}
                   {request.status_request === "em andamento" && (
@@ -380,7 +383,7 @@ export default function RequestComponent() {
                         changeStatus(request.id, "awaiting", request.email)
                       }
                     >
-                      CORRIGIR SOLICITAÇÃO
+                      <span>CORRIGIR SOLICITAÇÃO</span>
                     </button>
                   )}
                 </>

@@ -348,11 +348,11 @@
   }
   
   .buttonra {
-    position: relative;
-    overflow: hidden;
     background-color: white;
     border: 3px solid #28a745;
     color: #28a745;
+    position: relative;
+    overflow: hidden;
     font-weight: bold;
     justify-content: center;
     line-height: 1.25;
@@ -370,13 +370,13 @@
   }
   
   .buttonra::before {
+    background: linear-gradient(135deg, #28a745, #31c052);
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(135deg, #28a745, #31c052);
     transition: width 0.4s ease;
     z-index: 0;
   }
@@ -400,11 +400,11 @@
   }
   
   .buttonr {
-    position: relative;
-    overflow: hidden;
     background-color: white;
     border: 3px solid #0e0e0e;
     color: #0e0e0e;
+    position: relative;
+    overflow: hidden;
     font-weight: bold;
     justify-content: center;
     line-height: 1.25;
@@ -422,13 +422,13 @@
   }
   
   .buttonr::before {
+    background: linear-gradient(135deg, #0e0e0e, rgb(77, 77, 77));
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(135deg, #0e0e0e, rgb(77, 77, 77));
     transition: width 0.4s ease;
     z-index: 0;
   }
@@ -441,6 +441,11 @@
   .buttonr:hover {
     color: white;
   }
+
+  .buttonr span {
+    position: relative;
+    z-index: 1;
+  }
   
   .buttonr:active {
     transform: translateY(0);
@@ -448,11 +453,11 @@
   }
   
   .buttonrc {
-    position: relative;
-    overflow: hidden;
     background-color: white;
     border: 3px solid #ff7700;
     color: #ff7700;
+    position: relative;
+    overflow: hidden;
     font-weight: bold;
     justify-content: center;
     line-height: 1.25;
@@ -466,17 +471,17 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
   }
   
   .buttonrc::before {
+    background: linear-gradient(135deg, #ff7700, #e63600);
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(135deg, #ff7700, #e63600);
     transition: width 0.4s ease;
     z-index: 0;
   }
@@ -488,11 +493,17 @@
   .buttonrc:hover {
     color: white;
   }
+
+  .buttonrc span {
+    position: relative;
+    z-index: 1;
+  }
   
   .buttonrc:active {
     transform: translateY(0);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
+
   .buttonsdelete {
     position: relative;
     width: 100%;
