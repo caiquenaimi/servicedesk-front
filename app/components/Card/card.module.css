@@ -1,7 +1,7 @@
 /* Estilo geral do card */
 .card {
     background-color: #fff;
-    width: 400px;
+    width: 365px;
     border-radius: 12px; /* Borda mais suave */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra mais suave */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
