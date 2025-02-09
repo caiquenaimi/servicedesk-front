@@ -25,8 +25,7 @@ Este projeto visa fornecer uma interface intuitiva para um sistema de gerenciame
 
 Você pode acessar o Service Desk Front-End através do seguinte link:
 
-🔗 [Service Desk Front-End]([https://github.com/caiquenaimi/servicedesk-front](https://servicedesk-front.vercel.app))
-
+🔗 [Service Desk Front-End](https://servicedesk-front.vercel.app)
 
 ## Funcionalidades
 
